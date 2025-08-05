@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senior Design: ENR 405</title>
+    <!-- Tailwind CSS CDN for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Custom color for Coral */
+        .bg-coral { background-color: #FF7F50; }
+        .hover\:bg-coral-darker:hover { background-color: #F16F40; }
+        .text-coral { color: #FF7F50; }
+        .hover\:text-coral-lighter:hover { color: #FF9966; }
+
+        /* Styling for the collapsible summary */
+        details[open] summary ~ * {
+            animation: sweep .5s ease-in-out;
+        }
+        @keyframes sweep {
+            0%    {opacity: 0; margin-top: -10px}
+            100%  {opacity: 1; margin-top: 0px}
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-200">
+
+    <!-- Header Section -->
+    <header class="bg-gray-800 shadow-lg py-6 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center">
+            <div class="text-3xl font-extrabold tracking-tight text-white">
+                Senior Design: ENR 405
+            </div>
+            <!-- Navigation Links -->
+            <nav class="mt-4 sm:mt-0">
+                <a href="#" class="text-lg font-medium text-gray-300 hover:text-white mx-3 transition-colors duration-200" aria-label="Syllabus Link">Syllabus</a>
+                <a href="#" class="text-lg font-medium text-gray-300 hover:text-white mx-3 transition-colors duration-200" aria-label="Schedule Link">Schedule</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+
+        <!-- Course Overview Section -->
+        <section class="mb-16 text-center">
+            <h1 class="text-4xl sm:text-5xl font-bold tracking-tight text-white mb-4">
+                Welcome to Senior Design
+            </h1>
+            <p class="mt-4 text-xl text-gray-400 max-w-3xl mx-auto">
+                This course is the capstone experience for our students, challenging them to apply everything they've learned to design and develop a complex, real-world project.
+            </p>
+        </section>
+
+        <!-- Quick Links Section -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold tracking-tight text-white text-center mb-8">
+                Quick Links
+            </h2>
+            <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-8">
+                <!-- Syllabus Button -->
+                <a href="#" class="w-full sm:w-auto px-10 py-4 text-center text-lg font-semibold rounded-full bg-coral text-white shadow-lg hover:bg-coral-darker focus:outline-none focus:ring-4 focus:ring-red-600 focus:ring-opacity-50 transition-all duration-300">
+                    Syllabus
+                </a>
+                <!-- Schedule Button -->
+                <a href="#" class="w-full sm:w-auto px-10 py-4 text-center text-lg font-semibold rounded-full bg-gray-700 text-gray-100 shadow-lg hover:bg-gray-600 focus:outline-none focus:ring-4 focus:ring-gray-500 focus:ring-opacity-50 transition-all duration-300">
+                    Schedule
+                </a>
+            </div>
+        </section>
+        
+        <!-- Timeline Section -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold tracking-tight text-white text-center mb-10">
+                Course Timeline
+            </h2>
+            <div class="flex justify-center">
+                <!--
+                Replace this placeholder image with your Gantt chart image.
+                Make sure to update the src and alt attributes.
+                The image will automatically be responsive.
+                -->
+                <img src="https://placehold.co/1200x600/1F2937/D1D5DB?text=Gantt+Chart+Timeline" alt="Placeholder image for the course Gantt chart timeline." class="rounded-xl shadow-xl w-full max-w-4xl h-auto object-cover">
+            </div>
+        </section>
+
+        <!-- Current Projects Section (Collapsible) -->
+        <section class="mb-16">
+            <details class="rounded-2xl overflow-hidden bg-gray-800 shadow-xl">
+                <summary class="text-3xl font-bold tracking-tight text-white p-6 cursor-pointer hover:bg-gray-700 transition-colors duration-200">
+                    Current Projects
+                </summary>
+                <div class="p-6">
+                    <p class="text-gray-400 text-base mb-8">
+                        Below are the projects currently being worked on by this year's students.
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- Current Project Card 1 -->
+                        <div class="bg-gray-900 rounded-xl shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                            <img src="https://placehold.co/600x400/111827/9CA3AF?text=Current+Project+1" alt="Placeholder image for a current student project" class="w-full h-48 object-cover">
+                            <div class="p-4">
+                                <h3 class="text-xl font-bold text-white mb-1">Current Project Title 1</h3>
+                                <p class="text-gray-400 text-sm">A brief description of the current project, including its goals and what the team hopes to achieve.</p>
+                                <a href="#" class="mt-3 inline-block text-coral hover:text-coral-lighter font-semibold transition-colors duration-200">
+                                    View Project &rarr;
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Current Project Card 2 -->
+                        <div class="bg-gray-900 rounded-xl shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                            <img src="https://placehold.co/600x400/111827/9CA3AF?text=Current+Project+2" alt="Placeholder image for a current student project" class="w-full h-48 object-cover">
+                            <div class="p-4">
+                                <h3 class="text-xl font-bold text-white mb-1">Current Project Title 2</h3>
+                                <p class="text-gray-400 text-sm">A brief description of the current project, including its goals and what the team hopes to achieve.</p>
+                                <a href="#" class="mt-3 inline-block text-coral hover:text-coral-lighter font-semibold transition-colors duration-200">
+                                    View Project &rarr;
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Current Project Card 3 -->
+                        <div class="bg-gray-900 rounded-xl shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                            <img src="https://placehold.co/600x400/111827/9CA3AF?text=Current+Project+3" alt="Placeholder image for a current student project" class="w-full h-48 object-cover">
+                            <div class="p-4">
+                                <h3 class="text-xl font-bold text-white mb-1">Current Project Title 3</h3>
+                                <p class="text-gray-400 text-sm">A brief description of the current project, including its goals and what the team hopes to achieve.</p>
+                                <a href="#" class="mt-3 inline-block text-coral hover:text-coral-lighter font-semibold transition-colors duration-200">
+                                    View Project &rarr;
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </details>
+        </section>
+        
+        <!-- Previous Projects Section (Collapsible) -->
+        <section>
+            <details class="rounded-2xl overflow-hidden bg-gray-800 shadow-xl">
+                <summary class="text-3xl font-bold tracking-tight text-white p-6 cursor-pointer hover:bg-gray-700 transition-colors duration-200">
+                    Previous Projects
+                </summary>
+                <div class="p-6">
+                    <p class="text-gray-400 text-base mb-8">
+                        Below are examples of successful projects from previous years, showcasing the high quality of student work.
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- Project Card 1 -->
+                        <div class="bg-gray-900 rounded-xl shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                            <img src="https://placehold.co/600x400/111827/9CA3AF?text=Project+1" alt="Placeholder image for a previous student project" class="w-full h-48 object-cover">
+                            <div class="p-4">
+                                <h3 class="text-xl font-bold text-white mb-1">Project Title 1</h3>
+                                <p class="text-gray-400 text-sm">A brief description of the project, highlighting the problem it solved and the technologies used. </p>
+                                <a href="#" class="mt-3 inline-block text-coral hover:text-coral-lighter font-semibold transition-colors duration-200">
+                                    Learn more &rarr;
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Project Card 2 -->
+                        <div class="bg-gray-900 rounded-xl shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                            <img src="https://placehold.co/600x400/111827/9CA3AF?text=Project+2" alt="Placeholder image for a previous student project" class="w-full h-48 object-cover">
+                            <div class="p-4">
+                                <h3 class="text-xl font-bold text-white mb-1">Project Title 2</h3>
+                                <p class="text-gray-400 text-sm">A brief description of the project, highlighting the problem it solved and the technologies used.</p>
+                                <a href="#" class="mt-3 inline-block text-coral hover:text-coral-lighter font-semibold transition-colors duration-200">
+                                    Learn more &rarr;
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Project Card 3 -->
+                        <div class="bg-gray-900 rounded-xl shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                            <img src="https://placehold.co/600x400/111827/9CA3AF?text=Project+3" alt="Placeholder image for a previous student project" class="w-full h-48 object-cover">
+                            <div class="p-4">
+                                <h3 class="text-xl font-bold text-white mb-1">Project Title 3</h3>
+                                <p class="text-gray-400 text-sm">A brief description of the project, highlighting the problem it solved and the technologies used.</p>
+                                <a href="#" class="mt-3 inline-block text-coral hover:text-coral-lighter font-semibold transition-colors duration-200">
+                                    Learn more &rarr;
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </details>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 mt-16 py-6 text-center text-gray-500">
+        <p>&copy; 2025 Coe College. All Rights Reserved.span id="current-year"></span> </p>
+    </footer>
+
+    <script>
+        // Dynamically set the current year in the footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

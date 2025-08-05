@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senior Design: ENR 405 - Schedule</title>
+    <!-- Tailwind CSS CDN for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Custom color for Coral */
+        .bg-coral { background-color: #FF7F50; }
+        .hover\:bg-coral-darker:hover { background-color: #F16F40; }
+        .text-coral { color: #FF7F50; }
+        .hover\:text-coral-lighter:hover { color: #FF9966; }
+
+        /* Styling for the collapsible summary */
+        details[open] summary ~ * {
+            animation: sweep .5s ease-in-out;
+        }
+        @keyframes sweep {
+            0%    {opacity: 0; margin-top: -10px}
+            100%  {opacity: 1; margin-top: 0px}
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-200">
+
+    <!-- Header Section (Consistent with Index Page) -->
+    <header class="bg-gray-800 shadow-lg py-6 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center">
+            <!-- Logo and Title container -->
+            <div class="flex items-center space-x-4 mb-4 sm:mb-0">
+                <!-- Coe College Logo Placeholder -->
+                <img src="https://placehold.co/60x60/92272E/D1D5DB?text=Coe" alt="Coe College Logo" class="h-12 w-12 rounded-full">
+                <!-- Course Title -->
+                <div class="text-3xl font-extrabold tracking-tight text-white">
+                    Senior Design: ENR 405
+                </div>
+            </div>
+            <!-- Navigation Links -->
+            <nav class="mt-4 sm:mt-0">
+                <a href="index.html" class="text-lg font-medium text-gray-300 hover:text-white mx-3 transition-colors duration-200" aria-label="Home Link">Home</a>
+                <a href="#" class="text-lg font-medium text-gray-300 hover:text-white mx-3 transition-colors duration-200" aria-label="Syllabus Link">Syllabus</a>
+                <a href="#" class="text-lg font-medium text-white mx-3 transition-colors duration-200" aria-label="Schedule Link">Schedule</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+
+        <!-- Page Title Section -->
+        <section class="mb-16 text-center">
+            <h1 class="text-4xl sm:text-5xl font-bold tracking-tight text-white mb-4">
+                Course Schedule & Resources
+            </h1>
+            <p class="mt-4 text-xl text-gray-400 max-w-3xl mx-auto">
+                Here you can find important links for your projects and access the Moodle platform for submissions.
+            </p>
+        </section>
+
+        <!-- Useful Links and References Section - Organized by Week -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold tracking-tight text-white text-center mb-10">
+                Weekly Resources and Links
+            </h2>
+            <div id="weekly-resources-container" class="space-y-6">
+                <!-- Weekly resource details will be dynamically inserted here by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Moodle Submission Section -->
+        <section class="mb-16 bg-gray-800 rounded-2xl shadow-xl p-8 text-center">
+            <h2 class="text-3xl font-bold tracking-tight text-white mb-6">
+                Submit Your Work on Moodle
+            </h2>
+            <p class="text-lg text-gray-400 mb-8 max-w-2xl mx-auto">
+                All draft submissions, final reports, and presentations should be uploaded to the designated folders on the Moodle platform. Please ensure you meet all deadlines.
+            </p>
+            <a href="https://moodle.coe.edu/" target="_blank" class="inline-block px-10 py-4 text-center text-lg font-semibold rounded-full bg-coral text-white shadow-lg hover:bg-coral-darker focus:outline-none focus:ring-4 focus:ring-red-600 focus:ring-opacity-50 transition-all duration-300" aria-label="Go to Moodle">
+                Go to Moodle
+            </a>
+        </section>
+
+    </main>
+
+    <!-- Footer (Consistent with Index Page) -->
+    <footer class="bg-gray-800 mt-16 py-6 text-center text-gray-500">
+        <p>&copy; 2025 Coe College. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const weeklyResources = [
+            {
+                week: 2,
+                milestone: 'Team building + project proposal draft',
+                skills: [
+                    { name: 'Team Collaboration Tools', url: '#' },
+                    { name: 'Effective Brainstorming Techniques', url: '#' }
+                ],
+                tools: [
+                    { name: 'Google Docs/Sheets for Collaboration', url: '#' },
+                    { name: 'Miro for Brainstorming', url: '#' }
+                ],
+                lectures: [
+                    { name: 'Lecture: Forming Effective Teams', url: '#' }
+                ],
+                references: [
+                    { name: 'Proposal Template', url: '#' },
+                    { name: 'Team Charter Example', url: '#' }
+                ]
+            },
+            {
+                week: 4,
+                milestone: 'Problem statement + background research',
+                skills: [
+                    { name: 'Problem Definition', url: '#' },
+                    { name: 'Academic Research Methods', url: '#' }
+                ],
+                tools: [
+                    { name: 'Library Databases', url: '#' },
+                    { name: 'Citation Management Software', url: '#' }
+                ],
+                lectures: [
+                    { name: 'Lecture: Defining Your Problem', url: '#' },
+                    { name: 'Lecture: Conducting Literature Reviews', url: '#' }
+                ],
+                references: [
+                    { name: 'Guide to Writing a Problem Statement', url: '#' },
+                    { name: 'Sample Background Research Reports', url: '#' }
+                ]
+            },
+            {
+                week: 6,
+                milestone: 'Design specification + evaluation criteria',
+                skills: [
+                    { name: 'Technical Specification Writing', url: '#' },
+                    { name: 'Criteria Development', url: '#' }
+                ],
+                tools: [
+                    { name: 'Requirements Management Tools', url: '#' }
+                ],
+                lectures: [
+                    { name: 'Lecture: Engineering Design Principles', url: '#' }
+                ],
+                references: [
+                    { name: 'Design Spec Template', url: '#' },
+                    { name: 'Evaluation Rubric Examples', url: '#' }
+                ]
+            },
+            {
+                week: 8,
+                milestone: 'Midterm design review (concept presentation)',
+                skills: [
+                    { name: 'Presentation Skills', url: '#' },
+                    { name: 'Feedback Incorporation', url: '#' }
+                ],
+                tools: [
+                    { name: 'PowerPoint/Google Slides', url: '#' }
+                ],
+                lectures: [
+                    { name: 'Lecture: Effective Technical Presentations', url: '#' }
+                ],
+                references: [
+                    { name: 'Presentation Rubric', url: '#' },
+                    { name: 'Sample Midterm Presentations', url: '#' }
+                ]
+            },
+            {
+                week: 10,
+                milestone: 'Preliminary models / simulations',
+                skills: [
+                    { name: 'Modeling & Simulation', url: '#' },
+                    { name: 'Data Analysis', url: '#' }
+                ],
+                tools: [
+                    { name: 'CAD Software', url: '#' },
+                    { name: 'Simulation Software (e.g., MATLAB, SolidWorks)', url: '#' }
+                ],
+                lectures: [
+                    { name: 'Lecture: Introduction to Modeling', url: '#' }
+                ],
+                references: [
+                    { name: 'Modeling Best Practices', url: '#' }
+                ]
+            },
+            {
+                week: 12,
+                milestone: 'Proof-of-concept (POC) prototype + testing plan',
+                skills: [
+                    { name: 'Prototyping Techniques', url: '#' },
+                    { name: 'Test Plan Development', url: '#' }
+                ],
+                tools: [
+                    { name: '3D Printers, Microcontrollers', url: '#' },
+                    { name: 'Test Management Software', url: '#' }
+                ],
+                lectures: [
+                    { name: 'Lecture: Prototyping and Testing', url: '#' }
+                ],
+                references: [
+                    { name: 'POC Documentation Guide', url: '#' },
+                    { name: 'Testing Plan Template', url: '#' }
+                ]
+            },
+            {
+                week: 14,
+                milestone: 'Draft final report',
+                skills: [
+                    { name: 'Technical Report Writing', url: '#' },
+                    { name: 'Editing & Proofreading', url: '#' }
+                ],
+                tools: [
+                    { name: 'Grammar Checkers', url: '#' }
+                ],
+                lectures: [
+                    { name: 'Lecture: Structuring Your Final Report', url: '#' }
+                ],
+                references: [
+                    { name: 'Final Report Template', url: '#' },
+                    { name: 'Academic Writing Guide', url: '#' }
+                ]
+            },
+            {
+                week: 15,
+                milestone: 'Final report and presentation',
+                skills: [
+                    { name: 'Final Presentation Delivery', url: '#' },
+                    { name: 'Q&A Handling', url: '#' }
+                ],
+                tools: [
+                    { name: 'Presentation Software', url: '#' }
+                ],
+                lectures: [
+                    { name: 'Lecture: Delivering Impactful Presentations', url: '#' }
+                ],
+                references: [
+                    { name: 'Final Presentation Rubric', url: '#' },
+                    { name: 'Public Speaking Resources', url: '#' }
+                ]
+            }
+        ];
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const container = document.getElementById('weekly-resources-container');
+
+            weeklyResources.forEach(weekData => {
+                const details = document.createElement('details');
+                details.className = 'rounded-2xl overflow-hidden bg-gray-800 shadow-xl';
+
+                const summary = document.createElement('summary');
+                summary.className = 'text-2xl font-bold tracking-tight text-white p-6 cursor-pointer hover:bg-gray-700 transition-colors duration-200';
+                summary.textContent = `Week ${weekData.week}: ${weekData.milestone}`;
+                details.appendChild(summary);
+
+                const contentDiv = document.createElement('div');
+                contentDiv.className = 'p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8';
+
+                // Add Skills
+                const skillsDiv = document.createElement('div');
+                skillsDiv.innerHTML = `<h3 class="text-xl font-bold text-white mb-4">Skills</h3><ul class="space-y-2 text-gray-400"></ul>`;
+                const skillsList = skillsDiv.querySelector('ul');
+                weekData.skills.forEach(item => {
+                    const li = document.createElement('li');
+                    li.innerHTML = `<a href="${item.url}" class="hover:text-coral-lighter transition-colors duration-200">${item.name}</a>`;
+                    skillsList.appendChild(li);
+                });
+                contentDiv.appendChild(skillsDiv);
+
+                // Add Tools
+                const toolsDiv = document.createElement('div');
+                toolsDiv.innerHTML = `<h3 class="text-xl font-bold text-white mb-4">Tools</h3><ul class="space-y-2 text-gray-400"></ul>`;
+                const toolsList = toolsDiv.querySelector('ul');
+                weekData.tools.forEach(item => {
+                    const li = document.createElement('li');
+                    li.innerHTML = `<a href="${item.url}" class="hover:text-coral-lighter transition-colors duration-200">${item.name}</a>`;
+                    toolsList.appendChild(li);
+                });
+                contentDiv.appendChild(toolsDiv);
+
+                // Add Lectures
+                const lecturesDiv = document.createElement('div');
+                lecturesDiv.innerHTML = `<h3 class="text-xl font-bold text-white mb-4">Lectures</h3><ul class="space-y-2 text-gray-400"></ul>`;
+                const lecturesList = lecturesDiv.querySelector('ul');
+                weekData.lectures.forEach(item => {
+                    const li = document.createElement('li');
+                    li.innerHTML = `<a href="${item.url}" class="hover:text-coral-lighter transition-colors duration-200">${item.name}</a>`;
+                    lecturesList.appendChild(li);
+                });
+                contentDiv.appendChild(lecturesDiv);
+
+                // Add References
+                const referencesDiv = document.createElement('div');
+                referencesDiv.innerHTML = `<h3 class="text-xl font-bold text-white mb-4">References</h3><ul class="space-y-2 text-gray-400"></ul>`;
+                const referencesList = referencesDiv.querySelector('ul');
+                weekData.references.forEach(item => {
+                    const li = document.createElement('li');
+                    li.innerHTML = `<a href="${item.url}" class="hover:text-coral-lighter transition-colors duration-200">${item.name}</a>`;
+                    referencesList.appendChild(li);
+                });
+                contentDiv.appendChild(referencesDiv);
+
+                details.appendChild(contentDiv);
+                container.appendChild(details);
+            });
+        });
+    </script>
+</body>
+</html>

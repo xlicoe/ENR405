@@ -82,13 +82,63 @@
             <h2 class="text-3xl font-bold tracking-tight text-white text-center mb-10">
                 Course Timeline
             </h2>
-            <div class="flex justify-center">
-                <!--
-                Replace this placeholder image with your Gantt chart image.
-                Make sure to update the src and alt attributes.
-                The image will automatically be responsive.
-                -->
-                <img src="https://placehold.co/1200x600/1F2937/D1D5DB?text=Gantt+Chart+Timeline" alt="Placeholder image for the course Gantt chart timeline." class="rounded-xl shadow-xl w-full max-w-4xl h-auto object-cover">
+            <div class="flex justify-center overflow-x-auto">
+                <table class="w-full max-w-4xl rounded-xl shadow-xl bg-gray-800 text-gray-200 border-collapse">
+                    <thead>
+                        <tr class="bg-gray-700 text-gray-100">
+                            <th class="p-4 text-left font-semibold border-b border-gray-600">Week</th>
+                            <th class="p-4 text-left font-semibold border-b border-gray-600">Milestone/Deliverable</th>
+                            <th class="p-4 text-left font-semibold border-b border-gray-600">Milestone Counts</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="hover:bg-gray-600 transition-colors duration-200">
+                            <td class="p-4 border-b border-gray-700">2</td>
+                            <td class="p-4 border-b border-gray-700">Team building + project proposal draft</td>
+                            <td class="p-4 border-b border-gray-700">2</td>
+                        </tr>
+                        <tr class="hover:bg-gray-600 transition-colors duration-200">
+                            <td class="p-4 border-b border-gray-700">4</td>
+                            <td class="p-4 border-b border-gray-700">Problem statement + background research</td>
+                            <td class="p-4 border-b border-gray-700">2</td>
+                        </tr>
+                        <tr class="hover:bg-gray-600 transition-colors duration-200">
+                            <td class="p-4 border-b border-gray-700">6</td>
+                            <td class="p-4 border-b border-gray-700">Design specification + evaluation criteria</td>
+                            <td class="p-4 border-b border-gray-700">2</td>
+                        </tr>
+                        <tr class="hover:bg-gray-600 transition-colors duration-200">
+                            <td class="p-4 border-b border-gray-700">8</td>
+                            <td class="p-4 border-b border-gray-700">Midterm design review (concept presentation)</td>
+                            <td class="p-4 border-b border-gray-700">1</td>
+                        </tr>
+                        <tr class="hover:bg-gray-600 transition-colors duration-200">
+                            <td class="p-4 border-b border-gray-700">10</td>
+                            <td class="p-4 border-b border-gray-700">Preliminary models / simulations</td>
+                            <td class="p-4 border-b border-gray-700">2</td>
+                        </tr>
+                        <tr class="hover:bg-gray-600 transition-colors duration-200">
+                            <td class="p-4 border-b border-gray-700">12</td>
+                            <td class="p-4 border-b border-gray-700">Proof-of-concept (POC) prototype + testing plan</td>
+                            <td class="p-4 border-b border-gray-700">2</td>
+                        </tr>
+                        <tr class="hover:bg-gray-600 transition-colors duration-200">
+                            <td class="p-4 border-b border-gray-700">14</td>
+                            <td class="p-4 border-b border-gray-700">Draft final report</td>
+                            <td class="p-4 border-b border-gray-700">0</td>
+                        </tr>
+                        <tr class="hover:bg-gray-600 transition-colors duration-200">
+                            <td class="p-4 border-b border-gray-700">15</td>
+                            <td class="p-4 border-b border-gray-700">Final report and presentation</td>
+                            <td class="p-4 border-b border-gray-700">2</td>
+                        </tr>
+                        <tr class="bg-gray-700 font-bold text-gray-100">
+                            <td class="p-4">Total</td>
+                            <td class="p-4"></td>
+                            <td class="p-4">13</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </section>
 
@@ -137,6 +187,56 @@
                                     View Project &rarr;
                                 </a>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </details>
+        </section>
+
+        <!-- Useful Links and References Section (Collapsible) -->
+        <section class="mb-16">
+            <details class="rounded-2xl overflow-hidden bg-gray-800 shadow-xl">
+                <summary class="text-3xl font-bold tracking-tight text-white p-6 cursor-pointer hover:bg-gray-700 transition-colors duration-200">
+                    Useful Links and References
+                </summary>
+                <div class="p-6">
+                    <p class="text-gray-400 text-base mb-8">
+                        This section contains a collection of resources to help you with your senior design project, from technical skills to design tools and academic references.
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                        <div>
+                            <h3 class="text-xl font-bold text-white mb-4">Skills</h3>
+                            <ul class="space-y-2 text-gray-400">
+                                <li><a href="#" class="hover:text-coral-lighter transition-colors duration-200">Project Management</a></li>
+                                <li><a href="#" class="hover:text-coral-lighter transition-colors duration-200">Technical Writing</a></li>
+                                <li><a href="#" class="hover:text-coral-lighter transition-colors duration-200">Presentation Skills</a></li>
+                                <li><a href="#" class="hover:text-coral-lighter transition-colors duration-200">Prototyping Techniques</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-white mb-4">Tools</h3>
+                            <ul class="space-y-2 text-gray-400">
+                                <li><a href="#" class="hover:text-coral-lighter transition-colors duration-200">CAD Software</a></li>
+                                <li><a href="#" class="hover:text-coral-lighter transition-colors duration-200">Circuit Simulation</a></li>
+                                <li><a href="#" class="hover:text-coral-lighter transition-colors duration-200">Project Planning Boards</a></li>
+                                <li><a href="#" class="hover:text-coral-lighter transition-colors duration-200">Version Control (Git)</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-white mb-4">Lectures</h3>
+                            <ul class="space-y-2 text-gray-400">
+                                <li><a href="#" class="hover:text-coral-lighter transition-colors duration-200">Lecture Series on Ethics</a></li>
+                                <li><a href="#" class="hover:text-coral-lighter transition-colors duration-200">Guest Speaker Series</a></li>
+                                <li><a href="#" class="hover:text-coral-lighter transition-colors duration-200">Design Thinking Workshops</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-white mb-4">References</h3>
+                            <ul class="space-y-2 text-gray-400">
+                                <li><a href="#" class="hover:text-coral-lighter transition-colors duration-200">Design Specification Templates</a></li>
+                                <li><a href="#" class="hover:text-coral-lighter transition-colors duration-200">IEEE Citation Guide</a></li>
+                                <li><a href="#" class="hover:text-coral-lighter transition-colors duration-200">Project Proposal Examples</a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>

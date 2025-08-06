@@ -26,23 +26,23 @@
         }
     </style>
 </head>
-<body class="bg-gray-900 text-gray-200">
+<body class="bg-gray-50 text-gray-800">
 
     <!-- Header Section (Consistent with Index Page) -->
-    <header class="bg-gray-800 shadow-lg py-6 px-4 sm:px-6 lg:px-8">
+    <header class="bg-white shadow-lg py-6 px-4 sm:px-6 lg:px-8">
         <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center">
             <!-- Logo and Title container -->
             <div class="flex items-center space-x-4 mb-4 sm:mb-0">
                 <!-- Coe College Logo Placeholder -->
-                <img src="https://placehold.co/60x60/92272E/D1D5DB?text=Coe" alt="Coe College Logo" class="h-12 w-12 rounded-full">
+                <img src="https://placehold.co/60x60/92272E/FFFFFF?text=Coe" alt="Coe College Logo" class="h-12 w-12 rounded-full">
                 <!-- Course Title -->
-                <div class="text-3xl font-extrabold tracking-tight text-white">
+                <div class="text-3xl font-extrabold tracking-tight text-gray-900">
                     Senior Design: ENR 405
                 </div>
             </div>
             <!-- Navigation Links -->
             <nav class="mt-4 sm:mt-0">
-                <a href="index.html" class="text-lg font-medium text-gray-300 hover:text-white mx-3 transition-colors duration-200" aria-label="Home Link">Home</a>
+                <a href="index.html" class="text-lg font-medium text-gray-600 hover:text-coral mx-3 transition-colors duration-200" aria-label="Home Link">Home</a>
             </nav>
         </div>
     </header>
@@ -51,20 +51,20 @@
 
         <!-- Page Title Section -->
         <section class="mb-16 text-center">
-            <h1 class="text-4xl sm:text-5xl font-bold tracking-tight text-white mb-4">
+            <h1 class="text-4xl sm:text-5xl font-bold tracking-tight text-gray-900 mb-4">
                 Course Schedule & Resources
             </h1>
-            <p class="mt-4 text-xl text-gray-400 max-w-3xl mx-auto">
+            <p class="mt-4 text-xl text-gray-600 max-w-3xl mx-auto">
                 Here you can find important links for your projects and access the Moodle platform for submissions.
             </p>
         </section>
 
-        <!-- Moodle Submission Section (Moved to Top) -->
-        <section class="mb-16 bg-gray-800 rounded-2xl shadow-xl p-8 text-center">
-            <h2 class="text-3xl font-bold tracking-tight text-white mb-6">
+        <!-- Moodle Submission Section -->
+        <section class="mb-16 bg-white rounded-2xl shadow-xl p-8 text-center border border-gray-200">
+            <h2 class="text-3xl font-bold tracking-tight text-gray-900 mb-6">
                 Submit Your Work on Moodle
             </h2>
-            <p class="text-lg text-gray-400 mb-8 max-w-2xl mx-auto">
+            <p class="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
                 All draft submissions, final reports, and presentations should be uploaded to the designated folders on the Moodle platform. Please ensure you meet all deadlines.
             </p>
             <a href="https://moodle.coe.edu/" target="_blank" class="inline-block px-10 py-4 text-center text-lg font-semibold rounded-full bg-coral text-white shadow-lg hover:bg-coral-darker focus:outline-none focus:ring-4 focus:ring-red-600 focus:ring-opacity-50 transition-all duration-300" aria-label="Go to Moodle">
@@ -74,7 +74,7 @@
 
         <!-- Useful Links and References Section - Organized by Week -->
         <section class="mb-16">
-            <h2 class="text-3xl font-bold tracking-tight text-white text-center mb-10">
+            <h2 class="text-3xl font-bold tracking-tight text-gray-900 text-center mb-10">
                 Weekly Resources and Links
             </h2>
             <div id="weekly-resources-container" class="space-y-6">
@@ -82,23 +82,10 @@
             </div>
         </section>
 
-        <!-- Moodle Submission Section (Moved to Bottom) -->
-        <section class="mb-16 bg-gray-800 rounded-2xl shadow-xl p-8 text-center">
-            <h2 class="text-3xl font-bold tracking-tight text-white mb-6">
-                Submit Your Work on Moodle
-            </h2>
-            <p class="text-lg text-gray-400 mb-8 max-w-2xl mx-auto">
-                All draft submissions, final reports, and presentations should be uploaded to the designated folders on the Moodle platform. Please ensure you meet all deadlines.
-            </p>
-            <a href="https://moodle.coe.edu/" target="_blank" class="inline-block px-10 py-4 text-center text-lg font-semibold rounded-full bg-coral text-white shadow-lg hover:bg-coral-darker focus:outline-none focus:ring-4 focus:ring-red-600 focus:ring-opacity-50 transition-all duration-300" aria-label="Go to Moodle">
-                Go to Moodle
-            </a>
-        </section>
-
     </main>
 
     <!-- Footer (Consistent with Index Page) -->
-    <footer class="bg-gray-800 mt-16 py-6 text-center text-gray-500">
+    <footer class="bg-white mt-16 py-6 text-center text-gray-500 border-t border-gray-200">
         <p>&copy; 2025 Coe College. All rights reserved.</p>
     </footer>
 
@@ -259,56 +246,56 @@
 
             weeklyResources.forEach(weekData => {
                 const details = document.createElement('details');
-                details.className = 'rounded-2xl overflow-hidden bg-gray-800 shadow-xl';
+                details.className = 'rounded-2xl overflow-hidden bg-white shadow-xl border border-gray-200';
 
                 const summary = document.createElement('summary');
-                summary.className = 'text-2xl font-bold tracking-tight text-white p-6 cursor-pointer hover:bg-gray-700 transition-colors duration-200';
+                summary.className = 'text-2xl font-bold tracking-tight text-gray-900 p-6 cursor-pointer hover:bg-gray-100 transition-colors duration-200';
                 summary.textContent = `Week ${weekData.week}: ${weekData.milestone}`;
                 details.appendChild(summary);
 
                 const contentDiv = document.createElement('div');
-                contentDiv.className = 'p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8';
+                contentDiv.className = 'p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 border-t border-gray-200';
 
                 // Add Skills
                 const skillsDiv = document.createElement('div');
-                skillsDiv.innerHTML = `<h3 class="text-xl font-bold text-white mb-4">Skills</h3><ul class="space-y-2 text-gray-400"></ul>`;
+                skillsDiv.innerHTML = `<h3 class="text-xl font-bold text-gray-900 mb-4">Skills</h3><ul class="space-y-2 text-gray-600"></ul>`;
                 const skillsList = skillsDiv.querySelector('ul');
                 weekData.skills.forEach(item => {
                     const li = document.createElement('li');
-                    li.innerHTML = `<a href="${item.url}" class="hover:text-coral-lighter transition-colors duration-200">${item.name}</a>`;
+                    li.innerHTML = `<a href="${item.url}" class="hover:text-coral transition-colors duration-200">${item.name}</a>`;
                     skillsList.appendChild(li);
                 });
                 contentDiv.appendChild(skillsDiv);
 
                 // Add Tools
                 const toolsDiv = document.createElement('div');
-                toolsDiv.innerHTML = `<h3 class="text-xl font-bold text-white mb-4">Tools</h3><ul class="space-y-2 text-gray-400"></ul>`;
+                toolsDiv.innerHTML = `<h3 class="text-xl font-bold text-gray-900 mb-4">Tools</h3><ul class="space-y-2 text-gray-600"></ul>`;
                 const toolsList = toolsDiv.querySelector('ul');
                 weekData.tools.forEach(item => {
                     const li = document.createElement('li');
-                    li.innerHTML = `<a href="${item.url}" class="hover:text-coral-lighter transition-colors duration-200">${item.name}</a>`;
+                    li.innerHTML = `<a href="${item.url}" class="hover:text-coral transition-colors duration-200">${item.name}</a>`;
                     toolsList.appendChild(li);
                 });
                 contentDiv.appendChild(toolsDiv);
 
                 // Add Lectures
                 const lecturesDiv = document.createElement('div');
-                lecturesDiv.innerHTML = `<h3 class="text-xl font-bold text-white mb-4">Lectures</h3><ul class="space-y-2 text-gray-400"></ul>`;
+                lecturesDiv.innerHTML = `<h3 class="text-xl font-bold text-gray-900 mb-4">Lectures</h3><ul class="space-y-2 text-gray-600"></ul>`;
                 const lecturesList = lecturesDiv.querySelector('ul');
                 weekData.lectures.forEach(item => {
                     const li = document.createElement('li');
-                    li.innerHTML = `<a href="${item.url}" class="hover:text-coral-lighter transition-colors duration-200">${item.name}</a>`;
+                    li.innerHTML = `<a href="${item.url}" class="hover:text-coral transition-colors duration-200">${item.name}</a>`;
                     lecturesList.appendChild(li);
                 });
                 contentDiv.appendChild(lecturesDiv);
 
                 // Add References
                 const referencesDiv = document.createElement('div');
-                referencesDiv.innerHTML = `<h3 class="text-xl font-bold text-white mb-4">References</h3><ul class="space-y-2 text-gray-400"></ul>`;
+                referencesDiv.innerHTML = `<h3 class="text-xl font-bold text-gray-900 mb-4">References</h3><ul class="space-y-2 text-gray-600"></ul>`;
                 const referencesList = referencesDiv.querySelector('ul');
                 weekData.references.forEach(item => {
                     const li = document.createElement('li');
-                    li.innerHTML = `<a href="${item.url}" class="hover:text-coral-lighter transition-colors duration-200">${item.name}</a>`;
+                    li.innerHTML = `<a href="${item.url}" class="hover:text-coral transition-colors duration-200">${item.name}</a>`;
                     referencesList.appendChild(li);
                 });
                 contentDiv.appendChild(referencesDiv);
